@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MainApp
+{
+    internal class WordData
+    {
+        public Dictionary<string, object> WordsDict = new Dictionary<string, object>
+            {
+                { "das Herz", new[] { "Cor", "Cardia" } },
+                { "die Herzkranzgefäße", new[] { "Koronargefäße" } },
+                { "der Herzmuskel", new[] { "Myokard", "Myocardium" } },
+                { "die Blutgefäße", new[] { "die Ader", "Vas sanguineum" } },
+                { "der Blutkreislauf", new[] { "die Blutzirkulation" } },
+                { "das Blutgefäß, das das Blut zum Herz leitet", new[] { "Venen", "Blutadern" } },
+                { "das Blutgefäß, das das Blut in den Körper leitet", new[] { "Arterien", "Schlagadern" } },
+                { "die Hauptschlagader", new[] { "die Aorta" } },
+                { "das Gehirn", new[] { "das Hirn", "Zerebrum", "Cerebrum" } },
+                { "Blut", new[] { "Sanguis", "Haima" } },
+                { "die roten Blutkörperchen", new[] { "Erythrozyten" } },
+                { "die weißen Blutkörperchen", new[] { "Leukozyten" } },
+                { "die Blutplättchen", new[] { "Thrombozyten" } },
+                { "der Bluthochdruck", new[] { "Hypertonie" } },
+                { "der niedrige Blutdruck", new[] { "Hypotonie" } },
+                { "die Gefäßverkalkung", new[] { "Atherosklerose", "Arteriosklerose" } },
+                { "die hohe Blutfettkonzentration", new[] { "Hypercholesterinämie" } },
+                { "der Schlaganfall", new[] { "Apoplex", "Hirninfarkt" } },
+                { "der Herzinfarkt", new[] { "Herzinfarkt", "Myokardinfarkt" } },
+                { "die Brustenge", new[] { "Angina pectoris" } },
+                { "die Herzschwäche", new[] { "Herzinsuffizienz" } },
+                { "die Herzmuskelerkrankung", new[] { "Myokarditis" } },
+                { "die Entzündung der Herzinnenhaut", new[] { "Endokarditis" } },
+                { "der Blutpfropf im Gefäß", new[] { "Embolus" } },
+                { "der teilweise oder komplette Verschluss eines Blutgefäßes aufgrund eines Blutpfropfs", new[] { "Embolie" } },
+                { "die Atemnot", new[] { "Dyspnoe", "Atemlosigkeit", "Kurzatmigkeit" } },
+                { "die Lipidoder Cholesterineinlagerungen unter der Haut", new[] { "die Xanthelasmen" } },
+                { "der Schwindel", new[] { "die Vertigo" } },
+                { "die Schmerzen im Brustbereich/hinter dem Brustbein", new[] { "die Angina pectoris", "die Stenokardie" } },
+                { "die Herzrhythmusstörung", new[] { "die Arrhythmie" } },
+                { "das Herzrasen", new[] { "die Tachykardie" } },
+                { "die Phobie", new[] { "die Phobie" } },
+                { "der Schweißausbruch", new[] { "die Hyperhidrose" } },
+                { "die Abgeschlagenheit", new[] { "die Fatigue" } },
+                { "die Kopfschmerzen", new[] { "die Cephalgie" } },
+                { "das Nasenbluten", new[] { "die Epistaxis" } },
+                { "die Schlaflosigkeit", new[] { "die Insomnie" } },
+                { "die Schlafstörungen", new[] { "die Dysomnie" } },
+                { "der Blutdrucksenker", new[] { "das Antihypertensivum", "das Antihypertonikum" } },
+                { "das Arzneimittel zur Blutgerinnungshemmung", new[] { "das Antikoagulanz" } },
+                { "die blutfettsenkenden Arzneimittel, Cholesterinsenker", new[] { "die Statine" } },
+                { "die blutzuckerregulierenden Medikamente", new[] { "die Antidiabetika" } },
+                { "das Arzneimittel zur Behandlung von Herzrhythmusstörungen", new[] { "das Antiarrhythmikum" } },
+                { "das entwässernde Arzneimittel", new[] { "das Diuretikum" } },
+                { "die Tablette", new[] { "die Tabuletta" } },
+                { "die Kapsel", new[] { "die Capsula" } },
+                { "die Tropfen", new[] { "die Guttae" } },
+                { "das Spray", new[] { "das Aerosol" } },
+                { "die Infusion", new[] { "die Infusio" } },
+                { "über den Organismus wirkend", new[] { "systemisch" } },
+                { "über den Mund", new[] { "per os", "oral", "peroral" } },
+                { "in die Vene", new[] { "intravenös" } },
+                { "über den Verdauungstrakt", new[] { "enteral" } },
+                { "unter Umgehung des Verdauungstrakts", new[] { "parenteral" } },
+                { "unter die Zunge", new[] { "sublingual" } },
+                { "blutdrucksenkend", new[] { "antihypertensiv" } },
+                { "blutverdünnend, gerinnungshemmend", new[] { "antikoagulativ" } },
+                { "verengt", new[] { "obstruiert" } },
+                { "die Herzkranzgefäße betreffend", new[] { "koronar" } },
+                { "mit Symptomen", new[] { "symptomatisch" } },
+                { "symptomlos", new[] { "asymptomatisch" } },
+                { "die Häufigkeit einer Erkrankung innerhalb einer Bevölkerungsgruppe", new[] { "die Morbidität" } },
+                { "die Anzahl der Sterbefälle innerhalb eines bestimmten Zeitraums", new[] { "die Mortalität" } },
+                { "der Wert des höchsten Drucks in den Gefäßen bei Zusammenziehen des Herzmuskels", new[] { "die Systole" } },
+                { "der Wert des niedrigsten Drucks in den Gefäßen bei Entspannung des Herzmuskels", new[] { "die Diastole" } },
+                { "den Herz-Kreislauf betreffend", new[] { "kardiovaskulär" } },
+                { "die Gefäße betreffend", new[] { "vaskulär" } },
+                { "der zusätzliche Herzschlag", new[] { "die Extrasystole" } },
+            };
+    }
+}
